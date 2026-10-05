@@ -4,3 +4,33 @@
     box-sizing: border-box;
 }
 
+/* APEX NEW */
+
+@font-face {
+  font-family: "Apex New";
+  src: url("../fonts/ApexNewTrial-HeavyItalic-BF66724ea5556f9.otf") format("otf");
+  font-weight: 800;
+  font-style: italic;
+}
+
+@font-face{
+font-family: "Apex New";
+src: url("../fonts/ApexNewTrial-Bold-BF66724ea518ae4.otf") format("otf");
+font-weight: 700;
+font-style: normal;
+}
+
+@font-face{
+font-family: "Apex New";
+src: url("../fonts/ApexNewTrial-Medium-BF66724ea5881a1.otf") format("otf");
+font-weight: 500;
+font-style: normal;
+}
+
+
+@font-face{
+font-family: "Apex New";
+src: url("../fonts/ApexNewTrial-Book-BF66724ea4e7ac4.otf") format("otf");
+font-weight: 400;
+font-style: normal;
+}
