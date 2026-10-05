@@ -34,3 +34,22 @@ src: url("../fonts/ApexNewTrial-Book-BF66724ea4e7ac4.otf") format("otf");
 font-weight: 400;
 font-style: normal;
 }
+
+/* Variabler */
+
+:root {
+    
+  /* FONT */
+  --font-primary: "Apex New", Arial, sans-serif;
+
+  /* FONT SIZES */
+  --font-size-display: 96px;
+  --font-size-h1: 62px;
+  --font-size-h2: 32px;
+  --font-size-h3: 24px;
+
+  --font-size-label: 18px;
+  --font-size-intro: 21px;
+  --font-size-body: 17px;
+  --font-size-caption: 13px;
+}
