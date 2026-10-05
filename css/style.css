@@ -10,21 +10,21 @@
 
 @font-face {
   font-family: "Apex New";
-  src: url("../fonts/ApexNewTrial-HeavyItalic-BF66724ea5556f9.otf") format("otf");
+  src: url("../fonts/ApexNewTrial-HeavyItalic-BF66724ea5556f9.otf") format("opentype");
   font-weight: 800;
   font-style: italic;
 }
 
 @font-face{
 font-family: "Apex New";
-src: url("../fonts/ApexNewTrial-Bold-BF66724ea518ae4.otf") format("otf");
+src: url("../fonts/ApexNewTrial-Bold-BF66724ea518ae4.otf") format("opentype");
 font-weight: 700;
 font-style: normal;
 }
 
 @font-face{
 font-family: "Apex New";
-src: url("../fonts/ApexNewTrial-Medium-BF66724ea5881a1.otf") format("otf");
+src: url("../fonts/ApexNewTrial-Medium-BF66724ea5881a1.otf") format("opentype");
 font-weight: 500;
 font-style: normal;
 }
@@ -32,7 +32,7 @@ font-style: normal;
 
 @font-face{
 font-family: "Apex New";
-src: url("../fonts/ApexNewTrial-Book-BF66724ea4e7ac4.otf") format("otf");
+src: url("../fonts/ApexNewTrial-Book-BF66724ea4e7ac4.otf") format("opentype");
 font-weight: 400;
 font-style: normal;
 }
@@ -65,7 +65,7 @@ font-style: normal;
 
 /* Line heights*/
 
---line-height-body-text: 140%
+--line-height-body-text: 140%;
 
 /* Letter spacing */
   --letter-spacing-display: 5%;
@@ -73,7 +73,23 @@ font-style: normal;
   --letter-spacing-body: 0;
 
 
-  */ COLORS /*
+  /* COLORS */
+
+  --sort: #000000;
+  --moerkegraa: #3D3A3C;
+  --raahvid: #F5F5F0;
+  --hvid: #FFFFFF;
+
+  --lyseroed:#FF97C2;
+  --laks:#FA9898;
+  --roed:#FF003C ;
+  --orange:#E94C06;
+  --gul:#F5B71F;
 
 
+  --turkis: #2CAA9A;
+  --moerkeblaa:#0D3B89;
+  --dybhavsblaa: #062344;
+  --lysegroen: #ACD188;
+  --moerkegroen: #004832;
 }
