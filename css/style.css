@@ -4,6 +4,8 @@
     box-sizing: border-box;
 }
 
+
+
 /* APEX NEW */
 
 @font-face {
@@ -35,12 +37,14 @@ font-weight: 400;
 font-style: normal;
 }
 
+
+
 /* Variabler */
 
 :root {
-    
+
   /* FONT */
-  --font-primary: "Apex New", Arial, sans-serif;
+  --font-primary: "Apex New", sans-serif;
 
   /* FONT SIZES */
   --font-size-display: 96px;
@@ -52,4 +56,24 @@ font-style: normal;
   --font-size-intro: 21px;
   --font-size-body: 17px;
   --font-size-caption: 13px;
+
+  /* FONT WEIGHTS */
+  --font-weight-book: 400;
+  --font-weight-medium: 500;
+  --font-weight-bold: 700;
+  --font-weight-heavy: 800;
+
+/* Line heights*/
+
+--line-height-body-text: 140%
+
+/* Letter spacing */
+  --letter-spacing-display: 5%;
+  --letter-spacing-heading: 3%;
+  --letter-spacing-body: 0;
+
+
+  */ COLORS /*
+
+
 }
