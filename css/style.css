@@ -121,5 +121,12 @@ background: linear-gradient(
     rgb(13 59 137 / 80%) 60%,
     rgb(6 35 68 / 80%) 89.9%
 );
-      
+     z-index: 0; 
+}
+
+.logo{
+ position: relative;   
+z-index: 1;
+
+
 }
