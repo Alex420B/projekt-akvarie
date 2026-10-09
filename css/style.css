@@ -203,6 +203,20 @@ from{ left: -500px;}
 to { left: 100%;}
 }
 
+.skilt-tekst {
+position: absolute;
+top: 73%;
+left: 1310px ;
+font-family: "Apex New", sans-serif;
+font-size: var(--font-size-h1);
+line-height: auto;
+letter-spacing: 2%;
+font-weight: 700;
+z-index: 1;
+color: var(--moerkeblaa);
+transform: rotate(5deg);
+}
+
 
 .logo{
     width: 200px;
