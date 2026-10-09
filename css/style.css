@@ -124,9 +124,29 @@ background: linear-gradient(
      z-index: 0; 
 }
 
+.flag-container{
+display: flex;
+
+position: fixed;
+top: 20px;
+right: 20px; 
+z-index: 2;
+}
+
+.flag-container img{
+width: 60px;
+height: auto;
+margin-left: 7px;
+}
+
 .logo{
- position: relative;   
-z-index: 1;
+    width: 140px;
+    height: auto;
+}
 
-
+.logo-section{
+    position: fixed;
+    bottom: 20px;
+    left: 20px;
+    z-index:3;
 }
