@@ -167,13 +167,13 @@ overflow: hidden;
 
 .fisk2 {
     top: 60%;
-    left: 65%;
     width: 300px;
+    animation: fisk2 8s infinite linear;
 }
 
 @keyframes fisk2 {
-    from {translate: 0 0;}
-    to { translate: -150px 0; }
+    from { left: 100%;}
+    to { left: -300px; }
 }
 
 .fisk3 {
