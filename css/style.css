@@ -229,3 +229,39 @@ transform: rotate(5deg);
     left: 20px;
     z-index:3;
 }
+
+
+
+#popup {
+  width: 400px;
+  padding: 20px;
+  background: #dff7ff;
+  border-radius: 12px;
+  text-align: center;
+  font-family: Arial;
+}
+
+#fish {
+  width: 200px;
+  margin-bottom: 20px;
+}
+
+#food-container {
+  display: flex;
+  justify-content: space-around;
+}
+
+.food {
+  padding: 10px;
+  background: #fff;
+  border: 2px solid #ccc;
+  border-radius: 8px;
+  cursor: grab;
+  font-size: 20px;
+}
+
+#status {
+  margin-top: 20px;
+  font-size: 22px;
+  font-weight: bold;
+}
