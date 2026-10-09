@@ -178,13 +178,13 @@ overflow: hidden;
 
 .fisk3 {
     top: 15%;
-    left: 70%;
     width: 500px;
+    animation: fisk3 5s infinite linear ;
 }
 
 @keyframes fisk3 {
-    from { translate: 0 0;}
-    to { translate: -100px 100px;}
+    from { left: -300px;}
+    to { left: 100%;}
 }
 
 .fisk4 {
