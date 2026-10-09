@@ -139,6 +139,17 @@ height: auto;
 margin-left: 7px;
 }
 
+
+.akvarie{
+position: relative;
+width: 100%;
+height: 100vh;
+overflow: hidden;
+}
+
+
+
+
 .logo{
     width: 140px;
     height: auto;
