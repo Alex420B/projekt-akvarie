@@ -156,8 +156,13 @@ overflow: hidden;
 
 .fisk1 {
     top: 30%;
-    left: 20%;
     width: 500px;
+    animation: fisk1 6s infinite linear;
+}
+
+@keyframes fisk1 {
+    from { left: -500px; }
+    to { left: 100%; }
 }
 
 .fisk2 {
@@ -166,10 +171,20 @@ overflow: hidden;
     width: 300px;
 }
 
+@keyframes fisk2 {
+    from {translate: 0 0;}
+    to { translate: -150px 0; }
+}
+
 .fisk3 {
     top: 15%;
     left: 70%;
     width: 500px;
+}
+
+@keyframes fisk3 {
+    from { translate: 0 0;}
+    to { translate: -100px 100px;}
 }
 
 .fisk4 {
@@ -179,10 +194,16 @@ overflow: hidden;
       transform: scaleX(-1);
 }
 
+@keyframes fisk4 {
+    from {translate: 0 0;}
+    to {translate: 100px -100px;}
+}
+
 .fisk5 {
     top: 45%;
     left: 50%;
 }
+
 
 .logo{
     width: 140px;
