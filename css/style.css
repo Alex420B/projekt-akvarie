@@ -168,7 +168,7 @@ overflow: hidden;
 .fisk2 {
     top: 50%;
     width: 220px;
-    animation: fisk2 7s infinite linear;
+    animation: fisk2 9s infinite linear;
 }
 
 @keyframes fisk2 {
@@ -179,7 +179,7 @@ overflow: hidden;
 .fisk3 {
     top: 5%;
     width: 550px;
-    animation: fisk3 5s infinite linear ;
+    animation: fisk3 6s infinite linear ;
 }
 
 @keyframes fisk3 {
@@ -190,7 +190,7 @@ overflow: hidden;
 .fisk4 {
     top: 70%;
     width: 250px;
-    animation: fisk4 10s infinite linear;
+    animation: fisk4 12s infinite linear;
 }
 
 @keyframes fisk4 {
@@ -199,8 +199,15 @@ overflow: hidden;
 }
 
 .fisk5 {
-    top: 45%;
-    left: 50%;
+    top: 35%;
+    width: 300px;
+    z-index: 1;
+    animation: fisk5 9s infinite linear;
+}
+
+@keyframes fisk5{
+from{ left: -500px;}
+to { left: 100%;}
 }
 
 
