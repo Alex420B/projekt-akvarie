@@ -1,19 +1,24 @@
 "use strict";
 
 
-const akvarie = document.getElementsByClassName("akvarie");
 const fiskene = document.getElementsByClassName("fisk");
 
-
-
-
-const fish = document.getElementById("fish");
+const popup = document.getElementById("popup");
+const closePopup = document.getElementById("popup-close");
+const fish = document.getElementById("popup-fish");
 const foods = document.querySelectorAll(".food");
-
-
 const status = document.getElementById("status");
 
-// dropper on fisk
+Array.from(fiskene).forEach((fisk) => {
+  fisk.addEventListener("click", () => {
+    popup.hidden = !popup.hidden;
+  });
+});
+
+closePopup.addEventListener("click", () => {
+  popup.hidden = true;
+});
+
 fish.addEventListener("dragover", (e) => e.preventDefault());
 
 fish.addEventListener("drop", (e) => {
