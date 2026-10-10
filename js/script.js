@@ -7,7 +7,7 @@ const popup = document.getElementById("popup");
 const closePopup = document.getElementById("popup-close");
 const fish = document.getElementById("popup-fish");
 const foods = document.querySelectorAll(".food");
-const status = document.getElementById("status");
+const status = document.getElementById("statusMsg");
 
 Array.from(fiskene).forEach((fisk) => {
   fisk.addEventListener("click", () => {
@@ -19,10 +19,10 @@ closePopup.addEventListener("click", () => {
   popup.hidden = true;
 });
 
-fish.addEventListener("dragover", (e) => e.preventDefault());
+fish.addEventListener("dragover", (event) => event.preventDefault());
 
-fish.addEventListener("drop", (e) => {
-  const foodType = e.dataTransfer.getData("food-type");
+fish.addEventListener("drop", (event) => {
+  const foodType = event.dataTransfer.getData("food-type");
 
   if (foodType === "correct") {
     status.textContent = "Glad fisk!";
@@ -35,7 +35,7 @@ fish.addEventListener("drop", (e) => {
 
 // bruger drag data
 foods.forEach(food => {
-  food.addEventListener("dragstart", (e) => {
-    e.dataTransfer.setData("food-type", food.dataset.type);
+  food.addEventListener("dragstart", (event) => {
+    event.dataTransfer.setData("food-type", food.dataset.type);
   });
 });
