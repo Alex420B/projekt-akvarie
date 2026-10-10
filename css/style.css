@@ -205,12 +205,12 @@ to { left: 100%;}
 
 .skilt-tekst {
 position: absolute;
-top: 73%;
-left: 1310px ;
+top: 75%;
+left: 77%;
 font-family: "Apex New", sans-serif;
-font-size: var(--font-size-h1);
+font-size: var(--font-size-h2);
 line-height: auto;
-letter-spacing: 2%;
+letter-spacing: 3%;
 font-weight: 700;
 z-index: 1px;
 color: var(--moerkeblaa);
@@ -234,16 +234,16 @@ transform: rotate(5deg);
 
 #popup {
   position: fixed;
-  top: 50%;
-  left: 50%;
-  z-index: 4;
+  top: 25%;
+  left: 25%;
+  z-index: 1;
   width: 800px;
   padding: 20px;
   background: #dff7ff;
   border-radius: 12px;
   text-align: center;
   font-family: Arial;
-  transform: translate(-50%, -50%);
+  
 }
 
 #popup[hidden] {
@@ -251,7 +251,10 @@ transform: rotate(5deg);
 }
 
 #popup-close {
-  position: absolute;
+  display: inline-block;
+  justify-content: flex-end;
+
+  position: fixed;
   top: 8px;
   right: 12px;
   border: 0;
@@ -262,7 +265,7 @@ transform: rotate(5deg);
 }
 
 #popup-fish {
-  width: 200px;
+  width: 500px;
   margin-bottom: 20px;
 }
 
