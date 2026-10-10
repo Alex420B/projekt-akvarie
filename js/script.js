@@ -20,10 +20,10 @@ fish.addEventListener("drop", (e) => {
   const foodType = e.dataTransfer.getData("food-type");
 
   if (foodType === "correct") {
-    status.textContent = "😊 The fish is happy!";
+    status.textContent = "Glad fisk!";
     fish.style.filter = "brightness(1.2)";
   } else {
-    status.textContent = "😢 The fish is sad!";
+    status.textContent = "Sulten fisk!";
     fish.style.filter = "brightness(0.6)";
   }
 });
