@@ -203,6 +203,18 @@ from{ left: -500px;}
 to { left: 100%;}
 }
 
+.fisk6{
+top: 10%;
+width: 400px;
+animation: fisk6 6s infinite linear;
+}
+
+@keyframes fisk6{
+from { left : 100% }
+to { left: -300px}
+
+}
+
 .skilt-tekst {
 position: absolute;
 top: 75%;
@@ -216,7 +228,6 @@ z-index: 1px;
 color: var(--moerkeblaa);
 transform: rotate(5deg);
 }
-
 
 .logo{
     width: 200px;
