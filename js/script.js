@@ -14,7 +14,7 @@ const fishDetails = {
   puffer: {
     name: "Kuglefisk",
     info: "Kuglefisken spiser blandt andet små skaldyr og snegle.",
-    background: 'img/puffer.png',
+    background: "url('img/puffer.png') no-repeat center/contain",
     correctFood: "snail",
     foods: [
       { name: "Snegl", type: "snail" },
@@ -70,6 +70,7 @@ const popupFish = document.getElementById("popup-fish");
 const fishInfo = document.getElementById("fish-info");
 const foodContainer = document.getElementById("food-container");
 const status = document.getElementById("statusMsg");
+
 let selectedFish;
 
 function showFish(clickedFish) {
@@ -129,70 +130,3 @@ popupFish.addEventListener("drop", (event) => {
     popupFish.style.filter = "brightness(0.6)";
   }
 });
-
-// 1. Hent fiskene fra HTML
-const getFish1 = document.getElementById("fish1");
-const getFish2 = document.getElementById("fish2");
-const getFish3 = document.getElementById("fish3");
-const getFish4 = document.getElementById("fish4");
-
-// 2. Opret lydobjekter til fiskene
-const soundFish1 = new Audio("sound/fish1.wav");
-const soundFish2 = new Audio("sound/fish2.wav");
-const soundFish3 = new Audio("sound/fish3.wav");
-const soundFish4 = new Audio("sound/fish4.wav");
-
-// 3. Opret baggrundslyden
-const backgroundSound = new Audio("sound/aquarium.wav");
-backgroundSound.volume = 0.2;
-
-// Baggrundslyden skal gentage sig selv
-backgroundSound.loop = true; 
-
-// 4. Afspil en fiskelyd, når man klikker på fisken
-getFish1.addEventListener("click", () => {
-    soundFish1.currentTime = 4;
-    soundFish1.play();
-
-    setTimeout(() => {
-        soundFish1.pause();
-        soundFish1.currentTime = 0;
-    }, 4000);
-});
-
-getFish2.addEventListener("click", () => {
-    soundFish2.currentTime = 15;
-    soundFish2.play();
-
-    setTimeout(() => {
-        soundFish2.pause();
-        soundFish2.currentTime = 0;
-    }, 4000);
-});
-
-getFish3.addEventListener("click", () => {
-    soundFish3.currentTime = 0;
-    soundFish3.play();
-
-    setTimeout(() => {
-        soundFish3.pause();
-        soundFish3.currentTime = 0;
-    }, 4000);
-});
-
-getFish4.addEventListener("click", () => {
-    soundFish4.currentTime = 5;
-    soundFish4.play();
-
-    setTimeout(() => {
-        soundFish4.pause();
-        soundFish4.currentTime = 0;
-    }, 4000);
-});
-
-// 5. Start baggrundslyden efter brugerens første klik
-document.addEventListener("click", () => {
-    if (backgroundSound.paused) {
-        backgroundSound.play();
-    }
-}, { once: true });
