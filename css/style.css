@@ -206,20 +206,28 @@ from{ left: -500px;}
 to { left: 100%;}
 }
 
+.akvarie-skilt {
+  position: absolute;
+  top: 25px;
+  left: 50%;
+  transform: translateX(-50%);
 
-.skilt-tekst {
-position: absolute;
-top: 75%;
-left: 77%;
-font-family: "Apex New", sans-serif;
-font-size: var(--font-size-h2);
-line-height: auto;
-letter-spacing: 3%;
-font-weight: 700;
-z-index: 3;
-color: var(--moerkeblaa);
-transform: rotate(5deg);
+  background-color: #dff5ff;
+  color: #07527a;
+  border: 3px solid #79c9e8;
+  border-radius: 20px;
+
+  padding: 15px 30px;
+  font-size: 28px;
+  font-weight: bold;
+  text-align: center;
+
+  z-index: 10;
+  pointer-events: none;
 }
+
+
+
 
 .logo{
     width: 200px;
