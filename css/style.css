@@ -154,8 +154,11 @@ overflow: hidden;
 }
 
 @keyframes fisk1 {
-    from { left: -500px; }
-    to { left: 100%; }
+    0%   { left: -500px; top: 25%; }
+    25%  { top: 21%; }
+    50%  { top: 29%; }
+    75%  { top: 23%; }
+    100% { left: 100%; top: 25%; }
 }
 
 .fisk2 {
@@ -165,9 +168,13 @@ overflow: hidden;
 }
 
 @keyframes fisk2 {
-    from { left: 100%;}
-    to { left: -300px; }
+    0%   { left: 100%; top: 35%; }
+    25%  { top: 40%; }
+    50%  { top: 32%; }
+    75%  { top: 38%; }
+    100% { left: -300px; top: 35%; }
 }
+
 
 .fisk3 {
     top: 55%;
@@ -177,8 +184,11 @@ overflow: hidden;
 }
 
 @keyframes fisk3 {
-    from { left: -300px;}
-    to { left: 100%;}
+   0%   { left: -300px; top: 55%; }
+    25%  { top: 50%; }
+    50%  { top: 59%; }
+    75%  { top: 52%; }
+    100% { left: 100%; top: 55%; }
 }
 
 .fisk4 {
@@ -189,9 +199,13 @@ overflow: hidden;
 }
 
 @keyframes fisk4 {
-    from {left: 100%;}
-    to {left: -300px;}
+    0%   { left: 100%; top: 70%; }
+    25%  { top: 65%; }
+    50%  { top: 73%; }
+    75%  { top: 67%; }
+    100% { left: -300px; top: 70%; }
 }
+
 
 .fisk5 {
     top: 5%;
@@ -202,8 +216,11 @@ overflow: hidden;
 }
 
 @keyframes fisk5{
-from{ left: -500px;}
-to { left: 100%;}
+ 0%   { left: -500px; top: 5%; }
+    25%  { top: 9%; }
+    50%  { top: 4%; }
+    75%  { top: 8%; }
+    100% { left: 100%; top: 5%; }
 }
 
 .akvarie-skilt {
