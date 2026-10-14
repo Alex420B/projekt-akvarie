@@ -4,6 +4,7 @@ const fishDetails = {
   dory: {
     name: "Dory",
     info: "Dory er en kirurgfisk. Den spiser alger og små dyr i vandet.",
+    popupImage: "img/background.png",
     correctFood: "shrimp",
     foods: [
       { name: "Reje", type: "shrimp" },
@@ -14,6 +15,7 @@ const fishDetails = {
   puffer: {
     name: "Kuglefisk",
     info: "Kuglefisken spiser blandt andet små skaldyr og snegle.",
+    popupImage: "img/background.png",
     background: "url('img/puffer.png') no-repeat center/contain",
     correctFood: "snail",
     foods: [
@@ -25,6 +27,7 @@ const fishDetails = {
   shark: {
     name: "Haj",
     info: "Hajen er et rovdyr, der spiser fisk og andre havdyr.",
+    popupImage: "img/background.png",
     correctFood: "fish",
     foods: [
       { name: "Fisk", type: "fish" },
@@ -35,6 +38,7 @@ const fishDetails = {
   seahorse: {
     name: "Søhest",
     info: "Søhesten suger små krebsdyr, som rejer, ind med sin snude.",
+    popupImage: "img/background.png",
     correctFood: "shrimp",
     foods: [
       { name: "Små rejer", type: "shrimp" },
@@ -45,6 +49,7 @@ const fishDetails = {
   nemo: {
     name: "Klovnfisk",
     info: "Klovnfisken spiser små dyr i vandet og lidt alger.",
+    popupImage: "img/background.png",
     correctFood: "shrimp",
     foods: [
       { name: "Reje", type: "shrimp" },
@@ -55,6 +60,7 @@ const fishDetails = {
   "yellow-tang": {
     name: "Gul kirurgfisk",
     info: "Den gule kirurgfisk finder det meste af sin føde blandt alger.",
+    popupImage: "img/background.png",
     correctFood: "algae",
     foods: [
       { name: "Alger", type: "algae" },
@@ -83,7 +89,7 @@ function showFish(clickedFish) {
 
   popupTitle.textContent = `Fodr ${selectedFish.name}`;
   fishInfo.textContent = selectedFish.info;
-  popupFish.src = clickedFish.src;
+  popupFish.src = selectedFish.popupImage;
   popupFish.alt = selectedFish.name;
   popupFish.style.filter = "";
   status.textContent = "";
