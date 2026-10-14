@@ -55,6 +55,13 @@ const fishDetails = {
   nemo: {
     name: "Klovnfisk",
     info: "Klovnfisken spiser små dyr i vandet og lidt alger.",
+    size: "8-16 cm",
+    habitat: "Den bor mellem søanemoner i koralrev.",
+    color: "Orange med hvide striber",
+    lifespan: "6-12 år",
+    specialAbility: "Klovnfisken kan tåle søanemonens gift, som ellers kan skade andre fisk!",
+
+
     correctFood: "shrimp",
     foods: [
       { name: "Reje", type: "shrimp" },
@@ -65,6 +72,13 @@ const fishDetails = {
   "yellow-tang": {
     name: "Gul kirurgfisk",
     info: "Den gule kirurgfisk finder det meste af sin føde blandt alger.",
+    size: "Ca. 15-20 cm",
+    habitat: "Koralrev i varme have",
+    color: "Klar gul",
+    lifespan: "Op til 30 år",
+    specialAbility: "Den har en lille, skarp pig ved halen, som den kan bruge til at forsvare sig!",
+
+
     correctFood: "algae",
     foods: [
       { name: "Alger", type: "algae" },
