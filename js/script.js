@@ -9,6 +9,8 @@ const fishDetails = {
     color: "Blå, orange og gul",
     lifespan: "Ca. 5-12 år",
     specialAbility: "Dværgkejseren hjælper med at holde koralrevet rent ved at spise alger.",
+   audio: "sound/dvaergkejser.mp3",
+
     
     correctFood: "algae",
     foods: [
@@ -25,6 +27,7 @@ const fishDetails = {
     color: "Hvid, brun, blålig, gul og grønlig",
     lifespan: "2-15 år",
     specialAbility: "Kuglefisken har næsten ingen hals! Derfor ryger maden direkte ned i maven, når den sluger noget.",
+    audio: "sound/Puffer.mp3",
 
 
     background: "url('img/puffer.png') no-repeat center/contain",
@@ -44,6 +47,7 @@ const fishDetails = {
   color: "Lilla og gul",
   lifespan: "5-10 år",
   specialAbility: "Fisken kan skifte farve, hvis den bliver stresset. Så bliver dens farver mere blege!",
+  audio: "sound/Konge fehars.mp3",
 
   correctFood: "shrimp",
   foods: [
@@ -60,7 +64,7 @@ const fishDetails = {
     color: "Orange med hvide striber",
     lifespan: "6-12 år",
     specialAbility: "Klovnfisken kan tåle søanemonens gift, som ellers kan skade andre fisk!",
-
+    audio: "sound/Klovnkfisk.mp3",
 
     correctFood: "shrimp",
     foods: [
@@ -77,7 +81,7 @@ const fishDetails = {
     color: "Klar gul",
     lifespan: "Op til 30 år",
     specialAbility: "Den har en lille, skarp pig ved halen, som den kan bruge til at forsvare sig!",
-
+  audio: "sound/Gul kirug.mp3",
 
     correctFood: "algae",
     foods: [
@@ -95,6 +99,7 @@ const fishInfo = document.getElementById("fish-info");
 const foodContainer = document.getElementById("food-container");
 const status = document.getElementById("statusMsg");
 const fishFacts = document.getElementById("fish-facts");
+const fishAudio = new Audio();
 
 let selectedFish;
 
@@ -113,6 +118,7 @@ function showFish(clickedFish) {
   popupFish.style.filter = "";
   status.textContent = "";
   foodContainer.replaceChildren();
+  fishFacts.hidden = true;
 
   selectedFish.foods.forEach((foodDetails) => {
     const foodButton = document.createElement("button");
@@ -183,14 +189,25 @@ popupFish.addEventListener("drop", (event) => {
   </div> `
   ;
 
+fishAudio.pause();
+fishAudio.src = selectedFish.audio;
+fishAudio.currentTime = 0;
 
+console.log("Afspiller:", fishAudio.src);
+
+fishAudio.play().catch((error) => {
+  console.error("Fejl ved afspilning:", error);
+});
   
-  readFacts()
+
 
   } else {
     status.textContent = "Sulten fisk!";
     popupFish.style.filter = "brightness(0.6)";
     fishFacts.hidden = true;
+
+    fishAudio.pause();
+    fishAudio.currentTime = 0;
 
   }
 });
