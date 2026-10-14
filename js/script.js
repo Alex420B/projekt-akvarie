@@ -14,7 +14,7 @@ const fishDetails = {
   puffer: {
     name: "Kuglefisk",
     info: "Kuglefisken spiser blandt andet små skaldyr og snegle.",
-    background: 'img/puffer.png',
+    background: "url('img/puffer.png') no-repeat center/contain",
     correctFood: "snail",
     foods: [
       { name: "Snegl", type: "snail" },
@@ -70,6 +70,7 @@ const popupFish = document.getElementById("popup-fish");
 const fishInfo = document.getElementById("fish-info");
 const foodContainer = document.getElementById("food-container");
 const status = document.getElementById("statusMsg");
+
 let selectedFish;
 
 function showFish(clickedFish) {
