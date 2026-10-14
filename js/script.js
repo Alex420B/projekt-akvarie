@@ -150,16 +150,39 @@ popupFish.addEventListener("drop", (event) => {
   if (selectedFish && droppedFood === selectedFish.correctFood) {
     status.textContent = "Glad fisk!";
     popupFish.style.filter = "brightness(1.2)";
+    fishFacts.hidden = false;
 
  fishFacts.innerHTML = `
-      <h3>Vidste du?</h3>
-      <p> <strong>Størrelse:</strong> ${selectedFish.size}</p>
-      <p> <strong>Levested:</strong> ${selectedFish.habitat}</p>
-      <p> <strong>Farve:</strong> ${selectedFish.color}</p>
-      <p> <strong>Levetid:</strong> ${selectedFish.lifespan}</p>
-      <p> <strong>Særlig egenskab:</strong> ${selectedFish.specialAbility}</p>
-    `;
-    fishFacts.hidden = false;
+  <h3 class="fact-intro"> Du har låst op for fiskens hemmeligheder!</h3>
+
+ <div class="fact-grid">
+  <div class="fact-item">
+    <span class="fact-label">📏 Størrelse</span>
+    <span class="fact-value">${selectedFish.size}</span>
+  </div>
+
+  <div class="fact-item">
+    <span class="fact-label">🌊 Levested</span>
+    <span class="fact-value">${selectedFish.habitat}</span>
+  </div>
+
+  <div class="fact-item">
+    <span class="fact-label">🎨 Farve</span>
+    <span class="fact-value">${selectedFish.color}</span>
+  </div>
+
+  <div class="fact-item">
+    <span class="fact-label">⏳ Levetid</span>
+    <span class="fact-value">${selectedFish.lifespan}</span>
+  </div>
+</div>
+
+<div class="special-fact">
+    <strong>⭐ Fiskens superkraft</strong>
+    <p>${selectedFish.specialAbility}</p>
+  </div> `
+  ;
+
 
   
   readFacts()
