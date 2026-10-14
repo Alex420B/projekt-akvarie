@@ -20,7 +20,15 @@ const fishDetails = {
   puffer: {
     name: "Kuglefisk",
     info: "Kuglefisken spiser blandt andet små skaldyr og snegle.",
+    size: "10-35 cm. (Den kan blive 2-3 gange større, når den bliver bange!)",
+    habitat: "Koralrev, klipper og sandbund i havet",
+    color: "Hvid, brun, blålig, gul og grønlig",
+    lifespan: "2-15 år",
+    specialAbility: "Kuglefisken har næsten ingen hals! Derfor ryger maden direkte ned i maven, når den sluger noget.",
+
+
     background: "url('img/puffer.png') no-repeat center/contain",
+
     correctFood: "snail",
     foods: [
       { name: "Snegl", type: "snail" },
