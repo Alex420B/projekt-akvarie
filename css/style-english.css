@@ -97,7 +97,7 @@ font-style: normal;
 body {
 margin: 0;
  min-height: 100vh;
- background-image: url("../img/background.png");
+ background-image: url("../img/background-with-text.png");
 background-size: cover;
 background-position: center;
 background-repeat: no-repeat;
@@ -131,6 +131,7 @@ width: 60px;
 height: auto;
 margin-left: 7px;
 }
+
 
 
 .akvarie{
