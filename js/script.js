@@ -1,10 +1,16 @@
 "use strict";
 
 const fishDetails = {
-  dory: {
-    name: "Dory",
-    info: "Dory er en kirurgfisk. Den spiser alger og små dyr i vandet.",
-    correctFood: "shrimp",
+  "dwarf-angelfish": {
+    name: "Dværgkejser",
+    info: "Dværgkejseren spiser blandt andet alger og små dyr i vandet.",
+    size: "7-10 cm",
+    habitat: "Koralrev i varme have",
+    color: "Blå, orange og gul",
+    lifespan: "Ca. 5-12 år",
+    specialAbility: "Dværgkejseren hjælper med at holde koralrevet rent ved at spise alger.",
+    
+    correctFood: "algae",
     foods: [
       { name: "Reje", type: "shrimp" },
       { name: "Alger", type: "algae" },
@@ -14,7 +20,15 @@ const fishDetails = {
   puffer: {
     name: "Kuglefisk",
     info: "Kuglefisken spiser blandt andet små skaldyr og snegle.",
+    size: "10-35 cm. (Den kan blive 2-3 gange større, når den bliver bange!)",
+    habitat: "Koralrev, klipper og sandbund i havet",
+    color: "Hvid, brun, blålig, gul og grønlig",
+    lifespan: "2-15 år",
+    specialAbility: "Kuglefisken har næsten ingen hals! Derfor ryger maden direkte ned i maven, når den sluger noget.",
+
+
     background: "url('img/puffer.png') no-repeat center/contain",
+
     correctFood: "snail",
     foods: [
       { name: "Snegl", type: "snail" },
