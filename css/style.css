@@ -356,3 +356,7 @@ transform: rotate(5deg);
   color: #123b59;
   margin: 8px 0 0;
 }
+
+#fish-facts[hidden] {
+  display: none;
+}
