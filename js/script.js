@@ -108,6 +108,7 @@ const fishFacts = document.getElementById("fish-facts");
 
 const fishAudio = new Audio();
 const clickAudio = new Audio();
+const instructionAudio = new Audio("sound/fodr-fisken.mp3");
 
 const aquariumSound = document.querySelector("audio");
 aquariumSound.volume = 0.7;
@@ -125,12 +126,23 @@ function showFish(clickedFish) {
     return;
   }
 
- 
 clickAudio.pause();
+instructionAudio.pause();
+instructionAudio.currentTime = 0;
+
 clickAudio.src = selectedFish.clickSound;
 clickAudio.currentTime = 0;
 
 console.log("Kliklyd:", selectedFish.clickSound);
+
+clickAudio.onended = () => {
+  setTimeout(() => {
+    if (!popup.hidden) {
+      instructionAudio.currentTime = 0;
+      instructionAudio.play().catch(console.error);
+    }
+  }, 500);
+};
 
 clickAudio.play().catch((error) => {
   console.error("Kliklyden virker ikke:", error);
