@@ -22,6 +22,7 @@ const fishDetails = {
   puffer: {
     name: "Kuglefisk",
     info: "Kuglefisken spiser blandt andet små skaldyr og snegle.",
+    popupImage: "img/background.png",
     size: "10-35 cm. (Den kan blive 2-3 gange større, når den bliver bange!)",
     habitat: "Koralrev, klipper og sandbund i havet",
     color: "Hvid, brun, blålig, gul og grønlig",
@@ -31,7 +32,6 @@ const fishDetails = {
 
 
     background: "url('img/puffer.png') no-repeat center/contain",
-
     correctFood: "snail",
     foods: [
       { name: "Snegl", type: "snail" },
@@ -113,7 +113,7 @@ function showFish(clickedFish) {
 
   popupTitle.textContent = `Fodr ${selectedFish.name}`;
   fishInfo.textContent = selectedFish.info;
-  popupFish.src = clickedFish.src;
+  popupFish.src = selectedFish.popupImage;
   popupFish.alt = selectedFish.name;
   popupFish.style.filter = "";
   status.textContent = "";
