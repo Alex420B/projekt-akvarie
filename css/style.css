@@ -142,15 +142,15 @@ overflow: hidden;
 
 .fisk {
     position: absolute;
-
     height: auto;
     z-index: 3;
 }
 
 .fisk1 {
-    top: 30%;
-    width: 450px;
+    top: 25%;
+    width: 250px;
     animation: fisk1 6s infinite linear;
+   transform: scaleX(-1);
 }
 
 @keyframes fisk1 {
@@ -159,7 +159,7 @@ overflow: hidden;
 }
 
 .fisk2 {
-    top: 50%;
+    top: 35%;
     width: 220px;
     animation: fisk2 9s infinite linear;
 }
@@ -170,9 +170,10 @@ overflow: hidden;
 }
 
 .fisk3 {
-    top: 5%;
-    width: 550px;
+    top: 55%;
+    width: 250px;
     animation: fisk3 6s infinite linear ;
+    transform: scaleX(-1);
 }
 
 @keyframes fisk3 {
@@ -183,7 +184,8 @@ overflow: hidden;
 .fisk4 {
     top: 70%;
     width: 250px;
-    animation: fisk4 12s infinite linear;
+    animation: fisk4 10s infinite linear;
+    transform: scaleX(-1);
 }
 
 @keyframes fisk4 {
@@ -192,10 +194,11 @@ overflow: hidden;
 }
 
 .fisk5 {
-    top: 35%;
-    width: 300px;
+    top: 5%;
+    width: 350px;
     z-index: 3;
-    animation: fisk5 9s infinite linear;
+    animation: fisk5 8s infinite linear;
+    transform: scaleX(-1);
 }
 
 @keyframes fisk5{
@@ -203,17 +206,6 @@ from{ left: -500px;}
 to { left: 100%;}
 }
 
-.fisk6{
-top: 10%;
-width: 400px;
-animation: fisk6 6s infinite linear;
-}
-
-@keyframes fisk6{
-from { left : 100% }
-to { left: -300px}
-
-}
 
 .skilt-tekst {
 position: absolute;
