@@ -94,6 +94,7 @@ const popupFish = document.getElementById("popup-fish");
 const fishInfo = document.getElementById("fish-info");
 const foodContainer = document.getElementById("food-container");
 const status = document.getElementById("statusMsg");
+const fishFacts = document.getElementById("fish-facts");
 
 let selectedFish;
 
@@ -149,8 +150,24 @@ popupFish.addEventListener("drop", (event) => {
   if (selectedFish && droppedFood === selectedFish.correctFood) {
     status.textContent = "Glad fisk!";
     popupFish.style.filter = "brightness(1.2)";
+
+ fishFacts.innerHTML = `
+      <h3>Vidste du?</h3>
+      <p> <strong>Størrelse:</strong> ${selectedFish.size}</p>
+      <p> <strong>Levested:</strong> ${selectedFish.habitat}</p>
+      <p> <strong>Farve:</strong> ${selectedFish.color}</p>
+      <p> <strong>Levetid:</strong> ${selectedFish.lifespan}</p>
+      <p> <strong>Særlig egenskab:</strong> ${selectedFish.specialAbility}</p>
+    `;
+    fishFacts.hidden = false;
+
+  
+  readFacts()
+
   } else {
     status.textContent = "Sulten fisk!";
     popupFish.style.filter = "brightness(0.6)";
+    fishFacts.hidden = true;
+
   }
 });
