@@ -109,6 +109,7 @@ const fishFacts = document.getElementById("fish-facts");
 const fishAudio = new Audio();
 const clickAudio = new Audio();
 const instructionAudio = new Audio("sound/fodr-fisken.mp3");
+const successAudio = new Audio("sound/tillykke.mp3");
 
 const aquariumSound = document.querySelector("audio");
 aquariumSound.volume = 0.7;
@@ -234,9 +235,13 @@ fishAudio.currentTime = 0;
 
 console.log("Afspiller:", fishAudio.src);
 
-fishAudio.play().catch((error) => {
-  console.error("Fejl ved afspilning:", error);
-});
+successAudio.currentTime = 0;
+
+successAudio.onended = () => {
+  fishAudio.play().catch(console.error);
+};
+
+successAudio.play().catch(console.error);
   
 
 
