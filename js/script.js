@@ -36,25 +36,21 @@ const fishDetails = {
       { name: "Brød", type: "bread" },
     ],
   },
-  shark: {
-    name: "Haj",
-    info: "Hajen er et rovdyr, der spiser fisk og andre havdyr.",
-    correctFood: "fish",
-    foods: [
-      { name: "Fisk", type: "fish" },
-      { name: "Alger", type: "algae" },
-      { name: "Salat", type: "lettuce" },
-    ],
-  },
-  seahorse: {
-    name: "Søhest",
-    info: "Søhesten suger små krebsdyr, som rejer, ind med sin snude.",
-    correctFood: "shrimp",
-    foods: [
-      { name: "Små rejer", type: "shrimp" },
-      { name: "Tang", type: "seaweed" },
-      { name: "Brød", type: "bread" },
-    ],
+  "royal-gramma": {
+  name: "Konge fehars",
+  info: "Den lilla fisk elsker at spise små krebsdyr, som for eksempel bittesmå rejer",
+  size: "7-8 cm",
+  habitat: "Koralrev, klipper og små sprækker i havet",
+  color: "Lilla og gul",
+  lifespan: "5-10 år",
+  specialAbility: "Fisken kan skifte farve, hvis den bliver stresset. Så bliver dens farver mere blege!",
+
+  correctFood: "shrimp",
+  foods: [
+    { name: "Små rejer", type: "shrimp" },
+    { name: "Alger", type: "algae" },
+    { name: "Brød", type: "bread" }
+  ]
   },
   nemo: {
     name: "Klovnfisk",
