@@ -10,6 +10,7 @@ const fishDetails = {
     lifespan: "Ca. 5-12 år",
     specialAbility: "Dværgkejseren hjælper med at holde koralrevet rent ved at spise alger.",
    audio: "sound/dvaergkejser.mp3",
+ clickSound: "sound/fish!.mp3",
 
     
     correctFood: "algae",
@@ -29,6 +30,7 @@ const fishDetails = {
     lifespan: "2-15 år",
     specialAbility: "Kuglefisken har næsten ingen hals! Derfor ryger maden direkte ned i maven, når den sluger noget.",
     audio: "sound/Puffer.mp3",
+    clickSound: "sound/puffer carrot.mp3",
 
 
     background: "url('img/puffer.png') no-repeat center/contain",
@@ -48,6 +50,7 @@ const fishDetails = {
   lifespan: "5-10 år",
   specialAbility: "Fisken kan skifte farve, hvis den bliver stresset. Så bliver dens farver mere blege!",
   audio: "sound/Konge fehars.mp3",
+  clickSound: "sound/Fish Splash.mp3",
 
   correctFood: "shrimp",
   foods: [
@@ -65,12 +68,14 @@ const fishDetails = {
     lifespan: "6-12 år",
     specialAbility: "Klovnfisken kan tåle søanemonens gift, som ellers kan skade andre fisk!",
     audio: "sound/Klovnkfisk.mp3",
+    clickSound: "sound/nemo.mp3",
 
     correctFood: "shrimp",
     foods: [
       { name: "Reje", type: "shrimp" },
       { name: "Alger", type: "algae" },
       { name: "Brød", type: "bread" },
+    
     ],
   },
   "yellow-tang": {
@@ -82,6 +87,7 @@ const fishDetails = {
     lifespan: "Op til 30 år",
     specialAbility: "Den har en lille, skarp pig ved halen, som den kan bruge til at forsvare sig!",
   audio: "sound/Gul kirug.mp3",
+  clickSound: "sound/Fish sound.wav",
 
     correctFood: "algae",
     foods: [
@@ -99,21 +105,40 @@ const fishInfo = document.getElementById("fish-info");
 const foodContainer = document.getElementById("food-container");
 const status = document.getElementById("statusMsg");
 const fishFacts = document.getElementById("fish-facts");
+
 const fishAudio = new Audio();
+const clickAudio = new Audio();
+
+const aquariumSound = document.querySelector("audio");
+aquariumSound.volume = 0.7;
+
 
 let selectedFish;
 
 function showFish(clickedFish) {
   selectedFish = fishDetails[clickedFish.dataset.fish];
 
+  aquariumSound.volume = 0.1;
+
   if (!selectedFish) {
     console.error("Missing information for this fish.");
     return;
   }
 
+ 
+clickAudio.pause();
+clickAudio.src = selectedFish.clickSound;
+clickAudio.currentTime = 0;
+
+console.log("Kliklyd:", selectedFish.clickSound);
+
+clickAudio.play().catch((error) => {
+  console.error("Kliklyden virker ikke:", error);
+});
+
   popupTitle.textContent = `Fodr ${selectedFish.name}`;
   fishInfo.textContent = selectedFish.info;
-  popupFish.src = selectedFish.popupImage;
+  popupFish.src = clickedFish.src;
   popupFish.alt = selectedFish.name;
   popupFish.style.filter = "";
   status.textContent = "";
@@ -144,6 +169,8 @@ document.querySelectorAll(".fisk").forEach((clickedFish) => {
 
 document.getElementById("popup-close").addEventListener("click", () => {
   popup.hidden = true;
+  aquariumSound.volume = 0.7;
+
 });
 
 popupFish.addEventListener("dragover", (event) => {
