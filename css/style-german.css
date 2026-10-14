@@ -1,0 +1,313 @@
+* {
+    padding: 0%;
+    margin: 0%;
+    box-sizing: border-box;
+}
+
+
+
+/* APEX NEW */
+
+@font-face {
+  font-family: "Apex New";
+  src: url("fonts/ApexNewTrial-HeavyItalic-BF66724ea5556f9.otf") format("opentype");
+  font-weight: 800;
+  font-style: italic;
+}
+
+@font-face{
+font-family: "Apex New";
+src: url("fonts/ApexNewTrial-Bold-BF66724ea518ae4.otf") format("opentype");
+font-weight: 700;
+font-style: normal;
+}
+
+@font-face{
+font-family: "Apex New";
+src: url("fonts/ApexNewTrial-Medium-BF66724ea5881a1.otf") format("opentype");
+font-weight: 500;
+font-style: normal;
+}
+
+
+@font-face{
+font-family: "Apex New";
+src: url("fonts/ApexNewTrial-Book-BF66724ea4e7ac4.otf") format("opentype");
+font-weight: 400;
+font-style: normal;
+}
+
+
+
+/* Variabler */
+
+:root {
+
+  /* FONT */
+  --font-primary: "Apex New", sans-serif;
+
+  /* FONT SIZES */
+  --font-size-display: 96px;
+  --font-size-h1: 62px;
+  --font-size-h2: 32px;
+  --font-size-h3: 24px;
+
+  --font-size-label: 18px;
+  --font-size-intro: 21px;
+  --font-size-body: 17px;
+  --font-size-caption: 13px;
+
+  /* FONT WEIGHTS */
+  --font-weight-book: 400;
+  --font-weight-medium: 500;
+  --font-weight-bold: 700;
+  --font-weight-heavy: 800;
+
+/* Line heights*/
+
+--line-height-body-text: 140%;
+
+/* Letter spacing */
+  --letter-spacing-display: 5%;
+  --letter-spacing-heading: 3%;
+  --letter-spacing-body: 0;
+
+
+  /* COLORS */
+
+  --sort: #000000;
+  --moerkegraa: #3D3A3C;
+  --raahvid: #F5F5F0;
+  --hvid: #FFFFFF;
+
+  --lyseroed:#FF97C2;
+  --laks:#FA9898;
+  --roed:#FF003C ;
+  --orange:#E94C06;
+  --gul:#F5B71F;
+
+
+  --turkis: #2CAA9A;
+  --moerkeblaa:#0D3B89;
+  --dybhavsblaa: #062344;
+  --lysegroen: #ACD188;
+  --moerkegroen: #004832;
+}
+
+body {
+margin: 0;
+ min-height: 100vh;
+ background-image: url("../img/german-landing-page.png");
+background-size: cover;
+background-position: center;
+background-repeat: no-repeat;
+position: relative;
+}
+
+body::before{
+content: "";
+position: fixed;
+
+
+top: 0;
+left: 0;
+width: 100%;
+height: 100%;
+}
+
+
+
+.flag-container{
+display: flex;
+
+position: fixed;
+top: 20px;
+right: 20px; 
+z-index: 2;
+}
+
+.flag-container img{
+width: 60px;
+height: auto;
+margin-left: 7px;
+}
+
+
+
+.akvarie{
+position: relative;
+width: 100%;
+height: 100vh;
+overflow: hidden;
+}
+
+.fisk {
+    position: absolute;
+
+    height: auto;
+    z-index: 3;
+}
+
+.fisk1 {
+    top: 30%;
+    width: 450px;
+    animation: fisk1 6s infinite linear;
+}
+
+@keyframes fisk1 {
+    from { left: -500px; }
+    to { left: 100%; }
+}
+
+.fisk2 {
+    top: 50%;
+    width: 220px;
+    animation: fisk2 9s infinite linear;
+}
+
+@keyframes fisk2 {
+    from { left: 100%;}
+    to { left: -300px; }
+}
+
+.fisk3 {
+    top: 5%;
+    width: 550px;
+    animation: fisk3 6s infinite linear ;
+}
+
+@keyframes fisk3 {
+    from { left: -300px;}
+    to { left: 100%;}
+}
+
+.fisk4 {
+    top: 70%;
+    width: 250px;
+    animation: fisk4 12s infinite linear;
+}
+
+@keyframes fisk4 {
+    from {left: 100%;}
+    to {left: -300px;}
+}
+
+.fisk5 {
+    top: 35%;
+    width: 300px;
+    z-index: 3;
+    animation: fisk5 9s infinite linear;
+}
+
+@keyframes fisk5{
+from{ left: -500px;}
+to { left: 100%;}
+}
+
+.fisk6{
+top: 10%;
+width: 400px;
+animation: fisk6 6s infinite linear;
+}
+
+@keyframes fisk6{
+from { left : 100% }
+to { left: -300px}
+
+}
+
+.skilt-tekst {
+position: absolute;
+top: 75%;
+left: 77%;
+font-family: "Apex New", sans-serif;
+font-size: var(--font-size-h2);
+line-height: auto;
+letter-spacing: 3%;
+font-weight: 700;
+z-index: 3;
+color: var(--moerkeblaa);
+transform: rotate(5deg);
+}
+
+.logo{
+    width: 200px;
+    height: auto;
+}
+
+.logo-section{
+    position: fixed;
+    bottom: 20px;
+    left: 20px;
+    z-index:3;
+}
+
+
+
+#popup {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 3;
+  width: min(800px, calc(100vw - 32px));
+  max-height: calc(100vh - 32px);
+  overflow-y: auto;
+  padding: 20px;
+  background: #65d6fc;
+  border-radius: 12px;
+  text-align: center;
+  font-family: Arial;
+  
+}
+
+#popup[hidden] {
+  display: none;
+}
+
+#popup-close {
+  display: inline-block;
+  justify-content: flex-end;
+
+  position: fixed;
+  top: 8px;
+  right: 12px;
+  border: 0;
+  background: transparent;
+  font-size: 28px;
+  line-height: 1;
+  cursor: pointer;
+}
+
+#popup-fish {
+  width: 500px;
+  margin-bottom: 20px;
+}
+
+#food-container {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+#fish-info {
+  margin: 0 auto 20px;
+  max-width: 600px;
+  font-size: 18px;
+}
+
+.food {
+  padding: 10px;
+  background: #fff;
+  border: 2px solid #ccc;
+  border-radius: 8px;
+  cursor: grab;
+  font-size: 20px;
+}
+
+#statusMsg {
+  margin-top: 20px;
+  font-size: 22px;
+  font-weight: bold;
+}
