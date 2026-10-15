@@ -32,8 +32,6 @@ const fishDetails = {
     audio: "sound/Puffer.mp3",
     clickSound: "sound/puffer carrot.mp3",
 
-
-    background: "url('img/puffer.png') no-repeat center/contain",
     correctFood: "snail",
     foods: [
       { name: "Snegl", type: "snail" },
@@ -151,7 +149,7 @@ clickAudio.play().catch((error) => {
 
   popupTitle.textContent = `Fodr ${selectedFish.name}`;
   fishInfo.textContent = selectedFish.info;
-  popupFish.src = clickedFish.src;
+  popupFish.src = selectedFish.popupImage;
   popupFish.alt = selectedFish.name;
   popupFish.style.filter = "";
   status.textContent = "";
