@@ -11,6 +11,7 @@ const fishDetails = {
     specialAbility: "Dværgkejseren hjælper med at holde koralrevet rent ved at spise alger.",
    audio: "sound/dvaergkejser.mp3",
  clickSound: "sound/fish!.mp3",
+ 
 
     
     correctFood: "algae",
