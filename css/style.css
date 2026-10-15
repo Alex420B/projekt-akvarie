@@ -154,8 +154,11 @@ overflow: hidden;
 }
 
 @keyframes fisk1 {
-    from { left: -500px; }
-    to { left: 100%; }
+    0%   { left: -500px; top: 25%; }
+    25%  { top: 21%; }
+    50%  { top: 29%; }
+    75%  { top: 23%; }
+    100% { left: 100%; top: 25%; }
 }
 
 .fisk2 {
@@ -165,9 +168,13 @@ overflow: hidden;
 }
 
 @keyframes fisk2 {
-    from { left: 100%;}
-    to { left: -300px; }
+    0%   { left: 100%; top: 35%; }
+    25%  { top: 40%; }
+    50%  { top: 32%; }
+    75%  { top: 38%; }
+    100% { left: -300px; top: 35%; }
 }
+
 
 .fisk3 {
     top: 55%;
@@ -177,8 +184,11 @@ overflow: hidden;
 }
 
 @keyframes fisk3 {
-    from { left: -300px;}
-    to { left: 100%;}
+   0%   { left: -300px; top: 55%; }
+    25%  { top: 50%; }
+    50%  { top: 59%; }
+    75%  { top: 52%; }
+    100% { left: 100%; top: 55%; }
 }
 
 .fisk4 {
@@ -189,9 +199,13 @@ overflow: hidden;
 }
 
 @keyframes fisk4 {
-    from {left: 100%;}
-    to {left: -300px;}
+    0%   { left: 100%; top: 70%; }
+    25%  { top: 65%; }
+    50%  { top: 73%; }
+    75%  { top: 67%; }
+    100% { left: -300px; top: 70%; }
 }
+
 
 .fisk5 {
     top: 5%;
@@ -202,24 +216,35 @@ overflow: hidden;
 }
 
 @keyframes fisk5{
-from{ left: -500px;}
-to { left: 100%;}
+ 0%   { left: -500px; top: 5%; }
+    25%  { top: 9%; }
+    50%  { top: 4%; }
+    75%  { top: 8%; }
+    100% { left: 100%; top: 5%; }
+}
+
+.akvarie-skilt {
+  position: absolute;
+  top: 25px;
+  left: 50%;
+  transform: translateX(-50%);
+
+  background-color: #dff5ff;
+  color: #07527a;
+  border: 3px solid #79c9e8;
+  border-radius: 20px;
+
+  padding: 15px 30px;
+  font-size: 28px;
+  font-weight: bold;
+  text-align: center;
+
+  z-index: 10;
+  pointer-events: none;
 }
 
 
-.skilt-tekst {
-position: absolute;
-top: 75%;
-left: 77%;
-font-family: "Apex New", sans-serif;
-font-size: var(--font-size-h2);
-line-height: auto;
-letter-spacing: 3%;
-font-weight: 700;
-z-index: 3;
-color: var(--moerkeblaa);
-transform: rotate(5deg);
-}
+
 
 .logo{
     width: 200px;
@@ -301,4 +326,62 @@ transform: rotate(5deg);
   margin-top: 20px;
   font-size: 22px;
   font-weight: bold;
+}
+
+#fish-facts {
+  background-color: #dff5ff;
+  border: 3px solid #79c9e8;
+  border-radius: 20px;
+  padding: 20px;
+  margin-top: 15px;
+}
+
+#fish-facts h3 {
+  font-size: 30px;
+  margin-bottom: 25px;
+  text-align: center;
+  color: #07527a;
+}
+
+#fish-facts .fact-grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 10px;
+}
+
+#fish-facts .fact-item {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+  padding: 12px;
+  background: white;
+  border-radius: 12px;
+}
+
+#fish-facts .fact-label {
+  font-size: 22px;
+  font-weight: bold;
+  color: #07527a;
+}
+#fish-facts .special-fact {
+  background-color: #bceaff;
+  border-radius: 12px;
+  padding: 14px;
+  margin-top: 12px;
+}
+
+#fish-facts .special-fact strong {
+  font-size: 22px;
+  color: #07527a;
+}
+
+#fish-facts .special-fact p {
+  font-size: 15px;
+  line-height: 1.5;
+  color: #123b59;
+  margin: 8px 0 0;
+}
+
+#fish-facts[hidden] {
+  display: none;
 }
