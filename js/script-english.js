@@ -16,9 +16,9 @@ const fishDetails = {
  
     correctFood: "algae",
     foods: [
-      { name: "Reje", type: "shrimp" },
-      { name: "Alger", type: "algae" },
-      { name: "Brød", type: "bread" },
+      { name: "Shrimp", type: "shrimp" },
+      { name: "Algae", type: "algae" },
+      { name: "Bread", type: "bread" },
     ],
   },
   puffer: {
