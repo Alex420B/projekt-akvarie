@@ -4,6 +4,7 @@ const fishDetails = {
   "dwarf-angelfish": {
     name: "Dværgkejser",
     info: "Dværgkejseren spiser blandt andet alger og små dyr i vandet.",
+    popupImage: "",
     size: "7-10 cm",
     habitat: "Koralrev i varme have",
     color: "Blå, orange og gul",
@@ -11,6 +12,7 @@ const fishDetails = {
     specialAbility: "Dværgkejseren hjælper med at holde koralrevet rent ved at spise alger.",
    audio: "sound/dvaergkejser.mp3",
  clickSound: "sound/fish!.mp3",
+ 
 
     
     correctFood: "algae",
@@ -32,8 +34,6 @@ const fishDetails = {
     audio: "sound/Puffer.mp3",
     clickSound: "sound/puffer carrot.mp3",
 
-
-    background: "url('img/puffer.png') no-repeat center/contain",
     correctFood: "snail",
     foods: [
       { name: "Snegl", type: "snail" },
@@ -44,6 +44,7 @@ const fishDetails = {
   "royal-gramma": {
   name: "Konge fehars",
   info: "Den lilla fisk elsker at spise små krebsdyr, som for eksempel bittesmå rejer",
+  popupImage: "img/konge-febars.png",
   size: "7-8 cm",
   habitat: "Koralrev, klipper og små sprækker i havet",
   color: "Lilla og gul",
@@ -62,6 +63,7 @@ const fishDetails = {
   nemo: {
     name: "Klovnfisk",
     info: "Klovnfisken spiser små dyr i vandet og lidt alger.",
+    popupImage: "img/klovn-bg.png",
     size: "8-16 cm",
     habitat: "Den bor mellem søanemoner i koralrev.",
     color: "Orange med hvide striber",
@@ -81,6 +83,7 @@ const fishDetails = {
   "yellow-tang": {
     name: "Gul kirurgfisk",
     info: "Den gule kirurgfisk finder det meste af sin føde blandt alger.",
+    popupImage: "img/kirurg-bg.png",
     size: "Ca. 15-20 cm",
     habitat: "Koralrev i varme have",
     color: "Klar gul",
@@ -151,7 +154,7 @@ clickAudio.play().catch((error) => {
 
   popupTitle.textContent = `Fodr ${selectedFish.name}`;
   fishInfo.textContent = selectedFish.info;
-  popupFish.src = clickedFish.src;
+  popupFish.src = selectedFish.popupImage;
   popupFish.alt = selectedFish.name;
   popupFish.style.filter = "";
   status.textContent = "";
