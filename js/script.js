@@ -82,7 +82,7 @@ const fishDetails = {
   "yellow-tang": {
     name: "Gul kirurgfisk",
     info: "Den gule kirurgfisk finder det meste af sin føde blandt alger.",
-    popupImage: "img/kugle-bg-2.png",
+    popupImage: "img/kirurg-bg.png",
     size: "Ca. 15-20 cm",
     habitat: "Koralrev i varme have",
     color: "Klar gul",
