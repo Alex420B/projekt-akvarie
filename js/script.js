@@ -4,6 +4,7 @@ const fishDetails = {
   "dwarf-angelfish": {
     name: "Dværgkejser",
     info: "Dværgkejseren spiser blandt andet alger og små dyr i vandet.",
+    popupImage: "",
     size: "7-10 cm",
     habitat: "Koralrev i varme have",
     color: "Blå, orange og gul",
@@ -43,6 +44,7 @@ const fishDetails = {
   "royal-gramma": {
   name: "Konge fehars",
   info: "Den lilla fisk elsker at spise små krebsdyr, som for eksempel bittesmå rejer",
+  popupImage: "img/kugle-bg-2.png",
   size: "7-8 cm",
   habitat: "Koralrev, klipper og små sprækker i havet",
   color: "Lilla og gul",
@@ -61,6 +63,7 @@ const fishDetails = {
   nemo: {
     name: "Klovnfisk",
     info: "Klovnfisken spiser små dyr i vandet og lidt alger.",
+    popupImage: "img/klovn-bg.png",
     size: "8-16 cm",
     habitat: "Den bor mellem søanemoner i koralrev.",
     color: "Orange med hvide striber",
@@ -80,6 +83,7 @@ const fishDetails = {
   "yellow-tang": {
     name: "Gul kirurgfisk",
     info: "Den gule kirurgfisk finder det meste af sin føde blandt alger.",
+    popupImage: "img/kugle-bg-2.png",
     size: "Ca. 15-20 cm",
     habitat: "Koralrev i varme have",
     color: "Klar gul",
