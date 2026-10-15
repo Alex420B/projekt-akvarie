@@ -1,20 +1,19 @@
 "use strict";
 
 const fishDetails = {
-  "dwarf-angelfish": {
-    name: "Dværgkejser",
-    info: "Dværgkejseren spiser blandt andet alger og små dyr i vandet.",
-    popupImage: "",
-    size: "7-10 cm",
-    habitat: "Koralrev i varme have",
-    color: "Blå, orange og gul",
-    lifespan: "Ca. 5-12 år",
-    specialAbility: "Dværgkejseren hjælper med at holde koralrevet rent ved at spise alger.",
-   audio: "sound/dvaergkejser.mp3",
- clickSound: "sound/fish!.mp3",
- 
+"dwarf-angelfish": {
+  name: "Pufferfish",
+    info: "The pufferfish eats small crustaceans and snails, among other things.",
+    popupImage: "img/kugle-bg-2.png",
+    size: "10-35 cm. (It can grow 2–3 times larger when it gets scared!)",
+    habitat: "Coral reefs, rocks, and sandy seabed in the ocean",
+    color: "White, brown, bluish, yellow, and greenish",
+    lifespan: "2-15 years",
+    specialAbility: "The pufferfish has almost no neck! That is why food goes straight down into its stomach when it swallows something.",
+    audio: "sound/Puffer.mp3",
+    clickSound: "sound/puffer carrot.mp3",
 
-    
+ 
     correctFood: "algae",
     foods: [
       { name: "Reje", type: "shrimp" },
@@ -23,80 +22,80 @@ const fishDetails = {
     ],
   },
   puffer: {
-    name: "Kuglefisk",
-    info: "Kuglefisken spiser blandt andet små skaldyr og snegle.",
+    name: "Pufferfish",
+    info: "The pufferfish eats small crustaceans and snails, among other things.",
     popupImage: "img/kugle-bg-2.png",
-    size: "10-35 cm. (Den kan blive 2-3 gange større, når den bliver bange!)",
-    habitat: "Koralrev, klipper og sandbund i havet",
-    color: "Hvid, brun, blålig, gul og grønlig",
-    lifespan: "2-15 år",
-    specialAbility: "Kuglefisken har næsten ingen hals! Derfor ryger maden direkte ned i maven, når den sluger noget.",
+    size: "10-35 cm. (It can grow 2–3 times larger when it gets scared!)",
+    habitat: "Coral reefs, rocks, and sandy seabed in the ocean",
+    color: "White, brown, bluish, yellow, and greenish",
+    lifespan: "2-15 years",
+    specialAbility: "The pufferfish has almost no neck! That is why food goes straight down into its stomach when it swallows something.",
     audio: "sound/Puffer.mp3",
     clickSound: "sound/puffer carrot.mp3",
 
     correctFood: "snail",
     foods: [
-      { name: "Snegl", type: "snail" },
-      { name: "Alger", type: "algae" },
-      { name: "Brød", type: "bread" },
+      { name: "Snail", type: "snail" },
+      { name: "Algae", type: "algae" },
+      { name: "Bread", type: "bread" },
     ],
   },
   "royal-gramma": {
-  name: "Konge fehars",
-  info: "Den lilla fisk elsker at spise små krebsdyr, som for eksempel bittesmå rejer",
+  name: "Royal-gramma",
+  info: "The purple fish loves eating small crustaceans, such as tiny shrimp.",
   popupImage: "img/konge-febars.png",
   size: "7-8 cm",
-  habitat: "Koralrev, klipper og små sprækker i havet",
-  color: "Lilla og gul",
-  lifespan: "5-10 år",
-  specialAbility: "Fisken kan skifte farve, hvis den bliver stresset. Så bliver dens farver mere blege!",
+  habitat: "Coral reefs, rocks, and small crevices in the sea",
+  color: "Purple and yellow",
+  lifespan: "5-10 years",
+  specialAbility: "The fish can change color if it becomes stressed. Its colors then become paler!",
   audio: "sound/Konge fehars.mp3",
   clickSound: "sound/Fish Splash.mp3",
 
   correctFood: "shrimp",
   foods: [
-    { name: "Små rejer", type: "shrimp" },
-    { name: "Alger", type: "algae" },
-    { name: "Brød", type: "bread" }
+    { name: "Shrimp", type: "shrimp" },
+    { name: "Algae", type: "algae" },
+    { name: "Bread", type: "bread" }
   ]
   },
   nemo: {
-    name: "Klovnfisk",
-    info: "Klovnfisken spiser små dyr i vandet og lidt alger.",
+    name: "Clownfish",
+    info: "The clownfish eats small animals in the water and some algae.",
     popupImage: "img/klovn-bg.png",
     size: "8-16 cm",
-    habitat: "Den bor mellem søanemoner i koralrev.",
-    color: "Orange med hvide striber",
-    lifespan: "6-12 år",
-    specialAbility: "Klovnfisken kan tåle søanemonens gift, som ellers kan skade andre fisk!",
+    habitat: "It lives among sea anemones in coral reefs.",
+    color: "Orange with white stribes",
+    lifespan: "6-12 years",
+    specialAbility: "The clownfish can tolerate the sea anemone's poison, which can otherwise harm other fish!",
     audio: "sound/Klovnkfisk.mp3",
     clickSound: "sound/nemo.mp3",
 
     correctFood: "shrimp",
     foods: [
-      { name: "Reje", type: "shrimp" },
-      { name: "Alger", type: "algae" },
-      { name: "Brød", type: "bread" },
+      { name: "Shrimp", type: "shrimp" },
+      { name: "Algae", type: "algae" },
+      { name: "Bread", type: "bread" },
     
     ],
   },
   "yellow-tang": {
-    name: "Gul kirurgfisk",
-    info: "Den gule kirurgfisk finder det meste af sin føde blandt alger.",
+    name: "Yellow-tang",
+    info: "The yellow tang finds most of its food among algae.",
     popupImage: "img/kirurg-bg.png",
-    size: "Ca. 15-20 cm",
-    habitat: "Koralrev i varme have",
-    color: "Klar gul",
-    lifespan: "Op til 30 år",
-    specialAbility: "Den har en lille, skarp pig ved halen, som den kan bruge til at forsvare sig!",
+    size: "Approximately. 15-20 cm",
+    habitat: "Coral reef in warm sea",
+    color: "Clear gul",
+    lifespan: "Up to 30 years",
+    specialAbility: "It has a small, sharp spine near its tail that it can use to defend itself!",
   audio: "sound/Gul kirug.mp3",
   clickSound: "sound/Fish sound.wav",
 
     correctFood: "algae",
     foods: [
-      { name: "Alger", type: "algae" },
-      { name: "Fisk", type: "fish" },
-      { name: "Brød", type: "bread" },
+      { name: "Algae", type: "algae" },
+      { name: "Fish", type: "fish" },
+      { name: "Bread", type: "bread" },
     ],
   },
 };
@@ -152,7 +151,7 @@ clickAudio.play().catch((error) => {
   console.error("Kliklyden virker ikke:", error);
 });
 
-  popupTitle.textContent = `Fodr ${selectedFish.name}`;
+  popupTitle.textContent = `Feed ${selectedFish.name}`;
   fishInfo.textContent = selectedFish.info;
   popupFish.src = selectedFish.popupImage;
   popupFish.alt = selectedFish.name;

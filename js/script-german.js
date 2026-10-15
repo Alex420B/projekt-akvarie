@@ -12,7 +12,7 @@ const fishDetails = {
     ],
   },
   puffer: {
-    name: "Kugelfisch",
+    name: "der Kugelfisch",
     info: "Der Kugelfisch ernährt sich unter anderem von kleinen Schalentieren und Schnecken.",
     background: "url('img/puffer.png') no-repeat center/contain",
     correctFood: "snail",
@@ -43,7 +43,7 @@ const fishDetails = {
     ],
   },
   nemo: {
-    name: "Clownfische",
+    name: "der Clownfische",
     info: "Clownfische ernähren sich von kleinen Wassertieren und einigen Algen..",
     correctFood: "shrimp",
     foods: [
@@ -81,7 +81,7 @@ function showFish(clickedFish) {
     return;
   }
 
-  popupTitle.textContent = `Fodr ${selectedFish.name}`;
+  popupTitle.textContent = `Füttere ${selectedFish.name}`;
   fishInfo.textContent = selectedFish.info;
   popupFish.src = clickedFish.src;
   popupFish.alt = selectedFish.name;
