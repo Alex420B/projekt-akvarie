@@ -44,7 +44,7 @@ const fishDetails = {
   "royal-gramma": {
   name: "Konge fehars",
   info: "Den lilla fisk elsker at spise små krebsdyr, som for eksempel bittesmå rejer",
-  popupImage: "img/kugle-bg-2.png",
+  popupImage: "img/konge-febars.png",
   size: "7-8 cm",
   habitat: "Koralrev, klipper og små sprækker i havet",
   color: "Lilla og gul",
