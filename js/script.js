@@ -4,7 +4,7 @@ const fishDetails = {
   "dwarf-angelfish": {
     name: "Dværgkejser",
     info: "Dværgkejseren spiser blandt andet alger og små dyr i vandet.",
-    popupImage: "dvaerg-kejser.png",
+    popupImage: "img/dvaerg-kejser.png",
     size: "7-10 cm",
     habitat: "Koralrev i varme have",
     color: "Blå, orange og gul",
@@ -63,7 +63,7 @@ const fishDetails = {
   nemo: {
     name: "Klovnfisk",
     info: "Klovnfisken spiser små dyr i vandet og lidt alger.",
-    popupImage: "klovn-fisk.png",
+    popupImage: "img/klovn-fisk.png",
     size: "8-16 cm",
     habitat: "Den bor mellem søanemoner i koralrev.",
     color: "Orange med hvide striber",
