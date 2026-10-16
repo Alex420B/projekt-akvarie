@@ -3,7 +3,7 @@
 const fishDetails = {
   dory: {
     name: "Dory",
-    info: "Dory er en kirurgfisk. Den spiser alger og små dyr i vandet.",
+    info: "Dory ist ein Chirurgfisch. Sie isst Algen und kleine Tiere im Wasser.",
     correctFood: "shrimp",
     foods: [
       { name: "Reje", type: "shrimp" },
@@ -12,14 +12,14 @@ const fishDetails = {
     ],
   },
   puffer: {
-    name: "Kuglefisk",
-    info: "Kuglefisken spiser blandt andet små skaldyr og snegle.",
+    name: "der Kugelfisch",
+    info: "Der Kugelfisch ernährt sich unter anderem von kleinen Schalentieren und Schnecken.",
     background: "url('img/puffer.png') no-repeat center/contain",
     correctFood: "snail",
     foods: [
-      { name: "Snegl", type: "snail" },
-      { name: "Alger", type: "algae" },
-      { name: "Brød", type: "bread" },
+      { name: "Schnecke", type: "snail" },
+      { name: "Algen", type: "algae" },
+      { name: "Brot", type: "bread" },
     ],
   },
   shark: {
@@ -27,8 +27,8 @@ const fishDetails = {
     info: "Hajen er et rovdyr, der spiser fisk og andre havdyr.",
     correctFood: "fish",
     foods: [
-      { name: "Fisk", type: "fish" },
-      { name: "Alger", type: "algae" },
+      { name: "Fisch", type: "fish" },
+      { name: "Algen", type: "algae" },
       { name: "Salat", type: "lettuce" },
     ],
   },
@@ -43,23 +43,23 @@ const fishDetails = {
     ],
   },
   nemo: {
-    name: "Klovnfisk",
-    info: "Klovnfisken spiser små dyr i vandet og lidt alger.",
+    name: "der Clownfische",
+    info: "Clownfische ernähren sich von kleinen Wassertieren und einigen Algen..",
     correctFood: "shrimp",
     foods: [
-      { name: "Reje", type: "shrimp" },
-      { name: "Alger", type: "algae" },
-      { name: "Brød", type: "bread" },
+      { name: "Garnele", type: "shrimp" },
+      { name: "Algen", type: "algae" },
+      { name: "Brot", type: "bread" },
     ],
   },
   "yellow-tang": {
-    name: "Gul kirurgfisk",
-    info: "Den gule kirurgfisk finder det meste af sin føde blandt alger.",
+    name: "Gelber Segelflossendoktor",
+    info: "Der Gelbe Segelflossendoktor findet den größten Teil seiner Nahrung in Algen..",
     correctFood: "algae",
     foods: [
-      { name: "Alger", type: "algae" },
-      { name: "Fisk", type: "fish" },
-      { name: "Brød", type: "bread" },
+      { name: "Algen", type: "algae" },
+      { name: "Fisch", type: "fish" },
+      { name: "Brot", type: "bread" },
     ],
   },
 };
@@ -81,7 +81,7 @@ function showFish(clickedFish) {
     return;
   }
 
-  popupTitle.textContent = `Fodr ${selectedFish.name}`;
+  popupTitle.textContent = `Füttere ${selectedFish.name}`;
   fishInfo.textContent = selectedFish.info;
   popupFish.src = clickedFish.src;
   popupFish.alt = selectedFish.name;
